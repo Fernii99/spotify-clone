@@ -1,6 +1,6 @@
 "use client";
 
-import {useSound} from "use-sound";
+
 import { useEffect, useState } from "react";
 import { BsPauseFill, BsPlayFill } from "react-icons/bs";
 import { HiSpeakerWave, HiSpeakerXMark } from "react-icons/hi2";
@@ -11,7 +11,8 @@ import usePlayer from "@/hooks/usePlayer";
 
 import LikeButton from "./LikedButton";
 import MediaItem from "./MediaItem";
-import Slider from "./Slider";
+import Slider from "./Slider"
+import useSound from "use-sound";
 
 
 interface PlayerContentProps {
