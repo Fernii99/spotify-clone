@@ -153,11 +153,9 @@ const manageSubscriptionStatusChange = async (
     .from('subscriptions')
     .upsert([subscriptionData]);
   if (error) throw error;
-  console.log(
-    `Inserted/updated subscription [${subscription.id}] for user [${uuid}]`
-  );
+  console.log( `Inserted/updated subscription [${subscription.id}] for user [${uuid}]`);
 
- ostly operation and should happen at the very end.
+
   if (createAction && subscription.default_payment_method && uuid)
     //@ts-ignore
     await copyBillingDetailsToCustomer(
